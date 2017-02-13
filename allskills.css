@@ -1,0 +1,21 @@
+﻿body{
+	background:#283747;
+}
+table {
+	float:left;
+	background:#5D6D7E;
+	margin-left:10px;
+	border-style: solid;
+    border-width: 5px;
+}
+
+.img-container { 
+	position: relative; 
+}
+
+.img-container .top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}

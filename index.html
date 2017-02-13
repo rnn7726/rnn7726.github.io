@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="allskills.css">
+    <script>
+		function toggleVisibility(id) {
+		   	var el = document.getElementById(id);
+		   	if (el.style.visibility=="visible") {
+		   		el.style.visibility="hidden";
+		    }
+		    else {
+		        el.style.visibility="visible";
+		    }
+		}
+    </script>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>
+                <input type="checkbox" name="1p1" value="SPIRITFLAME" onChange="toggleVisibility('sf1');" />Spirit Flame</br>
+                <input type="checkbox" name="2p1" value="WALLJUMP" onChange="toggleVisibility('wj1');" />Wall Jump</br>
+                <input type="checkbox" name="3p1" value="DASH" onChange="toggleVisibility('d1');" />Dash</br>
+                <input type="checkbox" name="4p1" value="DOUBLEJUMP" onChange="toggleVisibility('dj1');" />Double Jump</br>
+                <input type="checkbox" name="5p1" value="BASH" onChange="toggleVisibility('b1');" />Bash</br>
+                <input type="checkbox" name="6p1" value="STOMP" onChange="toggleVisibility('s1');" />Stomp</br>
+                <input type="checkbox" name="7p1" value="CHARGEFLAME" onChange="toggleVisibility('cf1');" />Charge Flame</br>
+                <input type="checkbox" name="8p1" value="FEATHER" onChange="toggleVisibility('f1');" />Feather</br>
+                <input type="checkbox" name="9p1" value="CHARGEJUMP" onChange="toggleVisibility('cj1');" />Charge Jump</br>
+                <input type="checkbox" name="10p1" value="CLIMB" onChange="toggleVisibility('c1');" />Climb</br>
+                <input type="checkbox" name="11p1" value="LIGHTBURST" onChange="toggleVisibility('lb1');" />Light Burst</br>
+                <font color="#EAF2F8">Player 1</font>
+            </td>
+
+            <td>
+                <input type="checkbox" name="1p2" value="SPIRITFLAME" onChange="toggleVisibility('sf2');" />SPIRIT FLAME</br>
+                <input type="checkbox" name="2p2" value="WALLJUMP" onChange="toggleVisibility('wj2');" />WALL JUMP</br>
+                <input type="checkbox" name="3p2" value="DASH" onChange="toggleVisibility('d2');" />DASH</br>
+                <input type="checkbox" name="4p2" value="DOUBLEJUMP" onChange="toggleVisibility('dj2');" />DOUBLE JUMP</br>
+                <input type="checkbox" name="5p2" value="BASH" onChange="toggleVisibility('b2');" />BASH</br>
+                <input type="checkbox" name="6p2" value="STOMP" onChange="toggleVisibility('s2');" />STOMP</br>
+                <input type="checkbox" name="7p2" value="CHARGEFLAME" onChange="toggleVisibility('cf2');" />CHARGE FLAME</br>
+                <input type="checkbox" name="8p2" value="FEATHER" onChange="toggleVisibility('f2');" />FEATHER</br>
+                <input type="checkbox" name="9p2" value="CHARGEJUMP" onChange="toggleVisibility('cj2');" />CHARGE JUMP</br>
+                <input type="checkbox" name="10p2" value="CLIMB" onChange="toggleVisibility('c2');" />CLIMB</br>
+                <input type="checkbox" name="11p2" value="LIGHTBURST" onChange="toggleVisibility('lb2');" />LIGHT BURST</br>
+                <font color="#EAF2F8">Player 2</font>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="img-container">
+                    <img src="images/OriSkills.png" />
+                    <img class="top" id="sf1" src="images/spiritflame.png" style="visibility:hidden" />
+                    <img class="top" id="wj1" src="images/walljump.png" style="visibility:hidden" />
+                    <img class="top" id="d1" src="images/dash.png" style="visibility:hidden" />
+                    <img class="top" id="dj1" src="images/doublejump.png" style="visibility:hidden" />
+                    <img class="top" id="b1" src="images/bash.png" style="visibility:hidden" />
+                    <img class="top" id="s1" src="images/stomp.png" style="visibility:hidden" />
+                    <img class="top" id="cf1" src="images/chargeflame.png" style="visibility:hidden" />
+                    <img class="top" id="f1" src="images/glide.png" style="visibility:hidden" />
+                    <img class="top" id="cj1" src="images/chargejump.png" style="visibility:hidden" />
+                    <img class="top" id="c1" src="images/climb.png" style="visibility:hidden" />
+                    <img class="top" id="lb1" src="images/lightgrenade.png" style="visibility:hidden" />
+                </div>
+            </td>
+            <td>
+                <div class="img-container">
+                    <img src="images/OriSkills.png" />
+                    <img class="top" id="sf2" src="images/spiritflame.png" style="visibility:hidden" />
+                    <img class="top" id="wj2" src="images/walljump.png" style="visibility:hidden" />
+                    <img class="top" id="d2" src="images/dash.png" style="visibility:hidden" />
+                    <img class="top" id="dj2" src="images/doublejump.png" style="visibility:hidden" />
+                    <img class="top" id="b2" src="images/bash.png" style="visibility:hidden" />
+                    <img class="top" id="s2" src="images/stomp.png" style="visibility:hidden" />
+                    <img class="top" id="cf2" src="images/chargeflame.png" style="visibility:hidden" />
+                    <img class="top" id="f2" src="images/glide.png" style="visibility:hidden" />
+                    <img class="top" id="cj2" src="images/chargejump.png" style="visibility:hidden" />
+                    <img class="top" id="c2" src="images/climb.png" style="visibility:hidden" />
+                    <img class="top" id="lb2" src="images/lightgrenade.png" style="visibility:hidden" />
+                </div>
+            </td>
+        </tr>
+    </table>
+    <input type="button" onclick="history.go(0)" value="Reset All">
+
+    <table>
+        <tr><td><button type="submit" value="sf1">Spiritflame</button></td></tr>
+        <tr><td><button type="submit" value="wj1">Walljump</button></td></tr>
+        <tr><td><button type="submit" value="d1">Dash</button></td></tr>
+        <tr><td><button type="submit" value="dj1">Doublejump</button></td></tr>
+        <tr><td><button type="submit" value="b1">Bash</button></td></tr>
+        <tr><td><button type="submit" value="s1">Stomp</button></td></tr>
+        <tr><td><button type="submit" value="cf1">Chargeflame</button></td></tr>
+        <tr><td><button type="submit" value="f1">Feather</button></td></tr>
+        <tr><td><button type="submit" value="cj1">Chargejump</button></td></tr>
+        <tr><td><button type="submit" value="c1">Climb</button></td></tr>
+        <tr><td><button type="submit" value="lg1">Lightgrenade</button></td></tr>
+    </table>
+
+</body>
+</html>
