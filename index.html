@@ -18,38 +18,7 @@
 <body>
     <table  width="100%" border="0" cellspacing="0" cellpadding="0">
         <tr>
-            <td>
-                <input type="checkbox" name="1p1" value="SPIRITFLAME" onChange="toggleVisibility('sf1');" />Spirit Flame</br>
-                <input type="checkbox" name="2p1" value="WALLJUMP" onChange="toggleVisibility('wj1');" />Wall Jump</br>
-                <input type="checkbox" name="3p1" value="DASH" onChange="toggleVisibility('d1');" />Dash</br>
-                <input type="checkbox" name="4p1" value="DOUBLEJUMP" onChange="toggleVisibility('dj1');" />Double Jump</br>
-                <input type="checkbox" name="5p1" value="BASH" onChange="toggleVisibility('b1');" />Bash</br>
-                <input type="checkbox" name="6p1" value="STOMP" onChange="toggleVisibility('s1');" />Stomp</br>
-                <input type="checkbox" name="7p1" value="CHARGEFLAME" onChange="toggleVisibility('cf1');" />Charge Flame</br>
-                <input type="checkbox" name="8p1" value="FEATHER" onChange="toggleVisibility('f1');" />Feather</br>
-                <input type="checkbox" name="9p1" value="CHARGEJUMP" onChange="toggleVisibility('cj1');" />Charge Jump</br>
-                <input type="checkbox" name="10p1" value="CLIMB" onChange="toggleVisibility('c1');" />Climb</br>
-                <input type="checkbox" name="11p1" value="LIGHTBURST" onChange="toggleVisibility('lb1');" />Light Burst</br>
-                <font color="#EAF2F8">Player 1</font>
-            </td>
-
-            <td>
-                <input type="checkbox" name="1p2" value="SPIRITFLAME" onChange="toggleVisibility('sf2');" />SPIRIT FLAME</br>
-                <input type="checkbox" name="2p2" value="WALLJUMP" onChange="toggleVisibility('wj2');" />WALL JUMP</br>
-                <input type="checkbox" name="3p2" value="DASH" onChange="toggleVisibility('d2');" />DASH</br>
-                <input type="checkbox" name="4p2" value="DOUBLEJUMP" onChange="toggleVisibility('dj2');" />DOUBLE JUMP</br>
-                <input type="checkbox" name="5p2" value="BASH" onChange="toggleVisibility('b2');" />BASH</br>
-                <input type="checkbox" name="6p2" value="STOMP" onChange="toggleVisibility('s2');" />STOMP</br>
-                <input type="checkbox" name="7p2" value="CHARGEFLAME" onChange="toggleVisibility('cf2');" />CHARGE FLAME</br>
-                <input type="checkbox" name="8p2" value="FEATHER" onChange="toggleVisibility('f2');" />FEATHER</br>
-                <input type="checkbox" name="9p2" value="CHARGEJUMP" onChange="toggleVisibility('cj2');" />CHARGE JUMP</br>
-                <input type="checkbox" name="10p2" value="CLIMB" onChange="toggleVisibility('c2');" />CLIMB</br>
-                <input type="checkbox" name="11p2" value="LIGHTBURST" onChange="toggleVisibility('lb2');" />LIGHT BURST</br>
-                <font color="#EAF2F8">Player 2</font>
-            </td>
-        </tr>
-        <tr>
-            <td>
+            <td colspan="2">
                 <div class="img-container">
                     <img src="images/OriSkills.png" />
                     <img class="top" id="sf1" src="images/spiritflame.png" style="visibility:hidden" />
@@ -65,7 +34,7 @@
                     <img class="top" id="lb1" src="images/lightgrenade.png" style="visibility:hidden" />
                 </div>
             </td>
-            <td>
+            <td colspan="2">
                 <div class="img-container">
                     <img src="images/OriSkills.png" />
                     <img class="top" id="sf2" src="images/spiritflame.png" style="visibility:hidden" />
@@ -80,6 +49,46 @@
                     <img class="top" id="c2" src="images/climb.png" style="visibility:hidden" />
                     <img class="top" id="lb2" src="images/lightgrenade.png" style="visibility:hidden" />
                 </div>
+            </td>
+        </tr>
+		<tr>
+            <td colspan="2">
+                <div align="center">Player 1</div>
+			</td>
+            <td colspan="2">
+                <div align="center">Player 2</div>
+			</td>
+		</tr>
+        <tr>
+            <td style="padding-left:120px">
+                <input type="checkbox" id="1p1" name="1p1" value="SPIRITFLAME" onChange="toggleVisibility('sf1');" /><label for="1p1">Spirit Flame</label></br>
+                <input type="checkbox" id="2p1" name="2p1" value="WALLJUMP" onChange="toggleVisibility('wj1');" /><label for="2p1">Wall Jump</label></br>
+                <input type="checkbox" id="3p1" name="3p1" value="DASH" onChange="toggleVisibility('d1');" /><label for="3p1">Dash</label></br>
+                <input type="checkbox" id="4p1" name="4p1" value="DOUBLEJUMP" onChange="toggleVisibility('dj1');" /><label for="4p1">Double Jump</label></br>
+                <input type="checkbox" id="5p1" name="5p1" value="BASH" onChange="toggleVisibility('b1');" /><label for="5p1">Bash</label></br>
+			</td>
+			<td>
+                <input type="checkbox" id="6p1" name="6p1" value="STOMP" onChange="toggleVisibility('s1');" /><label for="6p1">Stomp</label></br>
+                <input type="checkbox" id="7p1" name="7p1" value="CHARGEFLAME" onChange="toggleVisibility('cf1');" /><label for="7p1">Charge Flame</label></br>
+                <input type="checkbox" id="8p1" name="8p1" value="FEATHER" onChange="toggleVisibility('f1');" /><label for="8p1">Feather</label></br>
+                <input type="checkbox" id="9p1" name="9p1" value="CHARGEJUMP" onChange="toggleVisibility('cj1');" /><label for="9p1">Charge Jump</label></br>
+                <input type="checkbox" id="10p1" name="10p1" value="CLIMB" onChange="toggleVisibility('c1');" /><label for="10p1">Climb</label></br>
+                <input type="checkbox" id="11p1" name="11p1" value="LIGHTBURST" onChange="toggleVisibility('lb1');" /><label for="11p1">Light Burst</label></br>
+            </td>
+            <td style="padding-left:120px">
+                <input type="checkbox" id="1p2" name="1p2" value="SPIRITFLAME" onChange="toggleVisibility('sf2');" /><label for="1p2">Spirit Flame</label></br>
+                <input type="checkbox" id="2p2" name="2p2" value="WALLJUMP" onChange="toggleVisibility('wj2');" /><label for="2p2">Wall Jump</label></br>
+                <input type="checkbox" id="3p2" name="3p2" value="DASH" onChange="toggleVisibility('d2');" /><label for="3p2">Dash</label></br>
+                <input type="checkbox" id="4p2" name="4p2" value="DOUBLEJUMP" onChange="toggleVisibility('dj2');" /><label for="4p2">Double Jump</label></br>
+                <input type="checkbox" id="5p2" name="5p2" value="BASH" onChange="toggleVisibility('b2');" /><label for="5p2">Bash</label></br>
+			</td>
+			<td>
+                <input type="checkbox" id="6p2" name="6p2" value="STOMP" onChange="toggleVisibility('s2');" /><label for="6p2">Stomp</label></br>
+                <input type="checkbox" id="7p2" name="7p2" value="CHARGEFLAME" onChange="toggleVisibility('cf2');" /><label for="7p2">Charge Flame</label></br>
+                <input type="checkbox" id="8p2" name="8p2" value="FEATHER" onChange="toggleVisibility('f2');" /><label for="8p2">Feather</label></br>
+                <input type="checkbox" id="9p2" name="9p2" value="CHARGEJUMP" onChange="toggleVisibility('cj2');" /><label for="9p2">Charge Jump</label></br>
+                <input type="checkbox" id="10p2" name="10p2" value="CLIMB" onChange="toggleVisibility('c2');" /><label for="10p2">Climb</label></br>
+                <input type="checkbox" id="11p2" name="11p2" value="LIGHTBURST" onChange="toggleVisibility('lb2');" /><label for="11p2">Light Burst</label></br>
             </td>
         </tr>
     </table>
